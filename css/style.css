@@ -79,11 +79,38 @@ h1 {
     text-align: center;
 }
 
+.page-subscribe .title-h2 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.page-subscribe .title-h2 span {
+    font-size: 14px;
+}
+
 .wrap {
     max-width: 1110px;
     margin: 0 auto;
 }
 
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 20px;  better use it with top background  */
+    margin-bottom: 187px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20 0 20px 0;
+}
+
+.logo {
+    display: block;
+    width: 181px;
+    height: 49px;
+    background-image: url(/images/logo.png);
+}
 
 .nav {
     font-size: 12px;
@@ -101,6 +128,7 @@ h1 {
 
 .nav-item {
     color: #c4c9d9;
+    letter-spacing: 2px;
 }
 
 .btn-primary {
@@ -116,7 +144,8 @@ h1 {
 
 .btn-primary:hover {
     color: #1085e4;
-    background-color: #fff;
+    background-color: transparent;
+    ;
 }
 
 .btn-secondary {
@@ -158,6 +187,7 @@ h1 {
 
 .btn-group a+a {
     margin-left: 15px;
+    list-style-type: none;
 }
 
 .grid h2 {
@@ -257,11 +287,14 @@ h1 {
 
 .box-price-item {
     background-color: #f5faff;
+    flex-basis: 32%;
+    position: relative;
+    padding: 90px 0 96px 0;
 }
 
 .box-price-item-active {
-background-color: #192b59;
-color: #fff;
+    background-color: #192b59;
+    color: #fff;
 }
 
 .box-price-item ul {
@@ -272,3 +305,177 @@ color: #fff;
 .box-price-item-active ul {
     list-style: none;
 }
+
+.box-price-item:first-child h3 {
+    margin-bottom: 35px;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background: #94b4cc;
+    border: 1px solid ##94b4cc;
+}
+
+.box-price-item-active:after {
+    content: "";
+    width: 58px;
+    height: 100%;
+    background-image: ;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.page-header {
+    background-image: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 53px 0 33px 0;
+    position: ;
+}
+
+.page-company {
+    background-image: url(../images/under-header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 106px 0 99px;
+}
+
+.list-company-item {
+    display: block;
+}
+
+.list-company {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.company-one {
+    background-image: url(../images/underheader-logo-1.png);
+    flex-basis: 198px;
+    height: 58px;
+}
+
+.company-two {
+    background-image: url(../images/underheader-logo-2.png);
+    flex-basis: 200px;
+    height: 69px;
+
+}
+
+.company-three {
+    background-image: url(../images/underheader-logo-3.png);
+    flex-basis: 201px;
+    height: 47px;
+}
+
+.company-four {
+    background-image: url(../images/underheader-logo-4.png);
+    flex-basis: 200px;
+    height: 69px;
+}
+
+
+.btn-group>li {
+    list-style: none;
+}
+
+.screen-img {
+    display: block;
+    background-image: url(../images/header-screen.png);
+    background-repeat: no-repeat;
+    width: 895px;
+    height: 740px;
+    position: absolute;
+    right: 43px;
+    top: 95px;
+}
+
+/* .box-price-item-active:after {
+    content: "";
+    width: 58px;
+    height: 100%;
+    background-image: url(../images/);
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+
+
+.box-subscribe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-subscribe-text {
+    font-size: 18px;
+    max-width: 437px;
+}
+
+
+.box-subscribe-user {
+    position: relative;
+}
+
+.box-subscribe-child {
+    flex-basis: 40%;
+}
+
+.box-subscribe-user input {
+    font-size: 14px;
+    border: 2px solid #4672c1;
+    border-radius: 30px;
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.box-subscribe-user input::-webkit-input-placeholder {
+    color: #b1c3ee;
+}
+
+.box-subscribe-user input::-moz-placeholder {
+    color: #b1c3ee;
+}
+
+.box-subscribe-user input:-moz-placeholder {
+    color: #b1c3ee;
+}
+
+.box-subscribe-user input:-ms-input-placeholder {
+    color: #b1c3ee;
+}
+
+.box-subscribe-user .btn-primary {
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    padding: 21px 33px;
+}
+
+.box-price-item-active:after {
+    display: none;
+}
+
+.page-subscribe {
+    padding: 25px 0 20px 0;
+    color: #fff;
+    /* color gets text  on page*/
+    background: rgba(10, 32, 144, 1);
+    background: -moz-linear-gradient(-45deg, rgba(10, 32, 144, 1) 0%, rgba(35, 120, 205, 1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10, 32, 144, 1)), color-stop(100%, rgba(35, 120, 205, 1)));
+    background: -webkit-linear-gradient(-45deg, rgba(10, 32, 144, 1) 0%, rgba(35, 120, 205, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(10, 32, 144, 1) 0%, rgba(35, 120, 205, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(10, 32, 144, 1) 0%, rgba(35, 120, 205, 1) 100%);
+    background: linear-gradient(135deg, rgba(10, 32, 144, 1) 0%, rgba(35, 120, 205, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1);
+}
+
+/* color gets text  */
