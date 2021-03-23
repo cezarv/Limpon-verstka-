@@ -1,3 +1,7 @@
+/***************
+GENERAL STYLING
+***************/
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -59,6 +63,201 @@ h1 {
 }
 
 
+.btn-primary {
+    font-size: 12px;
+    letter-spacing: 2.0px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #1085e4;
+    border: 1px solid #1085e4;
+    padding: 20px 35px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    color: #1085e4;
+    background-color: transparent;
+    ;
+}
+
+.btn-secondary {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #8491b2;
+    text-transform: uppercase;
+    background-color: #cbdbe8;
+    border: 1px solid #cbdbe8;
+    border: 1px solid;
+    padding: 20px 40px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    color: #1085e4;
+    background-color: #fff;
+}
+
+.btn-free {
+    font-weight: 400;
+    padding: 20px 47px;
+    letter-spacing: 1.7px;
+}
+
+.btn-info {
+    color: #8085b1;
+    background: transparent;
+    border: 1px solid #dce1e5;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #8491b2;
+    padding: 20px 40px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-group a+a {
+    margin-left: 15px;
+    list-style-type: none;
+}
+
+
+
+/***************************************
+STYLING page Best features ever seen
+****************************************/
+.grid {
+    display: grid;
+    grid-template-areas: "a b c"
+        "d b c"
+        "d f g"
+        "e f g"
+        "e h h";
+    grid-gap: 35px;
+    /* to create better gab between grid element we use grid-gap */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* to create 3 columns with the same width we use grid-template-columns without it
+    text within elements will afect the overall appearance of the grid elements */
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+/* дя грида - 3 столбика и 5 строк всего на странице с иконками */
+
+.grid-title {
+    grid-area: a;
+}
+
+.grid-item-1 {
+    grid-area: b;
+}
+
+.grid-item-2 {
+    grid-area: c;
+}
+
+.grid-item-3 {
+    grid-area: d;
+}
+
+.grid-item-4 {
+    grid-area: e;
+}
+
+.grid-item-5 {
+    grid-area: f;
+}
+
+.grid-item-1 {
+    grid-area: g;
+}
+
+.grid-text {
+    grid-area: h;
+}
+
+.grid h2 {
+    font-size: 40px;
+    color: #192b59;
+    font-weight: 700;
+}
+
+.grid h2 span {
+    font-size: 14px;
+    color: #81b3ed;
+    display: block;
+    line-height: 50px;
+}
+
+.grid-item h3 {
+    color: #192b59;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 13px;
+}
+
+.grid-item a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1085e4;
+}
+
+
+.grid-item {
+    text-align: center;
+    box-shadow: 0 0 5px #f5f5f5;
+}
+
+.grid-icon {
+    background-repeat: no-repeat;
+    display: block;
+    height: 92px;
+    /* same height of all icons (the highest has 92px) additionally every icon will get
+    background-size  with height and width for every icon we use background-position to center the icons*/
+    margin: 0px auto 20px;
+    background-position: center;
+}
+
+.grid-icon-1 {
+    background-image: url(../images/medium-icon2-and-bg.png);
+    background-size: 73px 79px;
+}
+
+.grid-icon-2 {
+    background-image: url(../images/medium-icon3-and-bg.png);
+    background-size: 89px 85px;
+}
+
+.grid-icon-3 {
+    background-image: url(../images/medium-icon-and-bg.png);
+    background-size: 79px 82px;
+}
+
+.grid-icon-4 {
+    background-image: url(../images/medium-icon5-and-bg.png);
+    background-size: 85px 90px;
+}
+
+.grid-icon-5 {
+    background-image: url(../images/medium-icon6-and-bg.png);
+    background-size: 100px 87px;
+}
+
+.grid-icon-6 {
+    background-image: url(../images/medium-icon4-and-bg.png);
+    background-size: 102px 92px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -79,16 +278,6 @@ h1 {
     text-align: center;
 }
 
-.page-subscribe .title-h2 {
-    color: #fff;
-    margin-top: 0;
-    margin-bottom: 25px;
-}
-
-.page-subscribe .title-h2 span {
-    font-size: 14px;
-}
-
 .wrap {
     max-width: 1110px;
     margin: 0 auto;
@@ -102,7 +291,7 @@ h1 {
     margin-bottom: 187px;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 20 0 20px 0;
+    padding: 20px 0 20px 0;
 }
 
 .logo {
@@ -131,89 +320,10 @@ h1 {
     letter-spacing: 2px;
 }
 
-.btn-primary {
-    font-size: 12px;
-    letter-spacing: 2.0px;
-    color: #fff;
-    text-transform: uppercase;
-    background-color: #1085e4;
-    border: 1px solid #1085e4;
-    padding: 20px 35px;
-    border-radius: 30px;
-}
 
-.btn-primary:hover {
-    color: #1085e4;
-    background-color: transparent;
-    ;
-}
 
-.btn-secondary {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-    color: #8491b2;
-    text-transform: uppercase;
-    background-color: #cbdbe8;
-    border: 1px solid #cbdbe8;
-    border: 1px solid;
-    padding: 20px 40px;
-    border-radius: 30px;
-}
 
-.btn-secondary:hover {
-    color: #1085e4;
-    background-color: #fff;
-}
 
-.btn-free {
-    font-weight: 400;
-    padding: 20px 47px;
-    letter-spacing: 1.7px;
-}
-
-.btn-info {
-    color: #8085b1;
-    background: transparent;
-    border: 1px solid #dce1e5;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: #8491b2;
-    padding: 20px 40px;
-    border-radius: 30px;
-}
-
-.btn-group a+a {
-    margin-left: 15px;
-    list-style-type: none;
-}
-
-.grid h2 {
-    font-size: 40px;
-    color: #192b59;
-    font-weight: 700;
-}
-
-.grid h2 span {
-    font-size: 14px;
-    color: #81b3ed;
-    display: block;
-    line-height: 50px;
-}
-
-.grid-item h3 {
-    color: #192b59;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.grid-item a {
-    font-size: 14px;
-    font-weight: 600;
-    color: #1085e4;
-}
 
 /* Formatting get started now */
 
@@ -276,7 +386,7 @@ h1 {
 
 .screen {
     margin-top: 31px;
-    margin-bottom: -7;
+    margin-bottom: -7px;
 }
 
 .box-price {
@@ -313,7 +423,7 @@ h1 {
 .btn-info:hover {
     color: #fff;
     background: #94b4cc;
-    border: 1px solid ##94b4cc;
+    border: 1px solid #94b4cc;
 }
 
 .box-price-item-active:after {
@@ -331,7 +441,7 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 53px 0 33px 0;
-    position: ;
+    position: relative;
 }
 
 .page-company {
@@ -407,6 +517,22 @@ h1 {
 } */
 
 
+/***************************************
+STYLING page SUBSCRIBE Signup for a trial
+****************************************/
+
+.page-subscribe .title-h2 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.page-subscribe .title-h2 span {
+    font-size: 14px;
+}
+
+
+
 .box-subscribe {
     display: flex;
     justify-content: space-between;
@@ -419,23 +545,41 @@ h1 {
 }
 
 
+/* box-subscribe-user helps to put a button with a word subscribe 
+button gets a position absolute and box-subscribe-user - relative. box-subscribe-user 
+is a parent block for button */
 .box-subscribe-user {
     position: relative;
 }
 
+
 .box-subscribe-child {
-    flex-basis: 40%;
+    flex-basis: 44%;
 }
 
 .box-subscribe-user input {
     font-size: 14px;
+    color: #fff;
     border: 2px solid #4672c1;
     border-radius: 30px;
     background-color: transparent;
     display: block;
     width: 100%;
     box-sizing: border-box;
+    padding: 20px 212px 25px 37px;
+    /* padding helps to border input text, so it does not go beyond button,
+    especially helps here 212px */
 }
+
+.box-subscribe-user input:focus,
+.box-subscribe-user .btn-primary {
+    outline: none;
+    /* it helps to avoid appearance of focus-rectangle border */
+}
+
+
+
+/* pseudoelements here found at https: //html5.by/blog/placeholder/ */
 
 .box-subscribe-user input::-webkit-input-placeholder {
     color: #b1c3ee;
@@ -456,13 +600,14 @@ h1 {
 .box-subscribe-user .btn-primary {
     position: absolute;
     top: 9px;
-    right: 8px;
-    padding: 21px 33px;
+    right: 7px;
+    padding: 13px 51px;
 }
 
 .box-price-item-active:after {
     display: none;
 }
+
 
 .page-subscribe {
     padding: 25px 0 20px 0;
@@ -478,4 +623,179 @@ h1 {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1);
 }
 
-/* color gets text  */
+/***************************************
+Grab Your Software With Amazing Features
+****************************************/
+
+.page-software {
+    padding: 109px 0 20px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.software-pic {
+    display: block;
+    width: 931px;
+    height: 760px;
+    background-image: url(../images/pc-graph.png);
+    background-size: 100% 100%;
+    background-origin: 0 0;
+    position: absolute;
+    left: -20px;
+    bottom: -39px;
+}
+
+.page-software-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.page-software-flex>div {
+    flex-basis: 55%;
+    /* this extra div is necessary to enable scrolling function within flex */
+}
+
+.settings-icon {
+    display: block;
+    background-image: url(../images/Grab.png);
+    background-repeat: no-repeat;
+    background-position: 44px 0;
+    width: 118px;
+    height: 98px;
+}
+
+.page-software-list {
+    margin-top: 31px;
+    height: 340px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
+.page-software-list::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+/* .page-software-list::-webkit-scrollbar-button {
+    background-color: #1085e4;
+} */
+
+.page-software-list::-webkit-scrollbar-track-piece {
+    background-color: #f3f6ff;
+}
+
+.page-software-list::-webkit-scrollbar-thumb {
+    height: 10px;
+    background-color: #1085e4;
+    border-radius: 10px;
+}
+
+.page-software-list dt {
+    font-weight: 700;
+    color: #7581a1;
+    margin-bottom: 20px;
+}
+
+.page-software-list dd {
+    font-size: 14px;
+    margin-left: 0;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+.page-software .title-h2,
+.page-analytics .title-h2 {
+    max-width: 446px;
+    margin-top: 12px;
+    margin-bottom: 26px;
+}
+
+/*************************************** 
+    PAGE Meet With Future Landingpage 
+    ***************************************/
+.content-app .title-h2 {
+    margin: 20px;
+}
+
+
+.page-app-text {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #d5dfe6;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 3.5px;
+}
+
+.page-app-list {
+    padding: 0;
+    list-style-type: none;
+    margin-left: -7px;
+}
+
+
+.page-app-list>li {
+    display: inline-block;
+}
+
+.page-app-list>li>a {
+    background-image: url(../images/gplay-astore.png);
+    display: block;
+    width: 220px;
+    height: 95px;
+    background-repeat: no-repeat;
+}
+
+.page-app-list>li>a.page-app-android {
+    background-position: 3px 0;
+}
+
+.page-app-list>li>a.page-app-ios {
+    background-position: -205px 0;
+}
+
+.content-app {
+    width: 55%;
+}
+
+.page-app {
+    padding: 27px 0 92px 0;
+}
+
+.page-app .wrap {
+    position: relative;
+}
+
+.video-app {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
+/**************************************** 
+Limpon Is Suitable For Anytype Landing Page 
+****************************************/
+
+.page-analytics {
+    background-image: url(../images/3ecks.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 20px 0 20px 0;;
+}
+
+.flex-analytics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-analytics-text {
+    margin-bottom: 54px ;
+}
+
+.flex-analytics>div {
+flex-basis: 50%;
+}
