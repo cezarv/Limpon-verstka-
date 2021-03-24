@@ -781,9 +781,10 @@ Limpon Is Suitable For Anytype Landing Page
 
 .page-analytics {
     background-image: url(../images/3ecks.png);
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
-    padding: 20px 0 20px 0;;
+    background-size: cover;
+    padding: 20px 0 20px 0;
 }
 
 .flex-analytics {
@@ -793,9 +794,35 @@ Limpon Is Suitable For Anytype Landing Page
 }
 
 .page-analytics-text {
-    margin-bottom: 54px ;
+    margin-bottom: 54px;
 }
 
 .flex-analytics>div {
-flex-basis: 50%;
+    flex-basis: 50%;
+}
+
+
+
+.page-control {
+    background-image: url(../images/);
+    background-position: center;
+    /* background-position: center; helpts to 
+    avoid movement of picture in front of other picture, if we try to minify the page
+    so background will be minified according to plan and not rigth away*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px 0 137px 0;
+
+}
+
+/**************************** 
+    Page Screenshot With Details
+    ****************************/
+
+.page-clients {
+    background-image: url(../images/);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px 0 137px 0;
 }
