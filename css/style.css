@@ -833,7 +833,7 @@ Limpon Is Suitable For Anytype Landing Page
     border-radius: 10px;
     flex-basis: 30%;
     box-sizing: border-box;
-    box-shadow: 0 9px 20px #f4f4f4;
+    box-shadow: 0 5px 6px #f4f4f4;
 }
 
 
@@ -876,9 +876,14 @@ Limpon Is Suitable For Anytype Landing Page
     z-index: -1;
 }
 
-.page-clients .title-40 {
+.page-clients .title-40 .page-team {
     color: #fff;
 }
+
+.page-clients .title-40 span, .page-team .title-40 span{
+    color: #85c8ff;
+}
+
 
 .box-info {
     display: flex;
@@ -898,3 +903,68 @@ Limpon Is Suitable For Anytype Landing Page
 .box-clients-item .box-info>img {
     display: inline-block;
 }
+
+/************************
+    angels- Our Team 
+    ********************/
+
+.page-clients .title-40, .page-team .title-40{
+    color: #fff;
+}
+
+.page-clients .title-40 span, .page-team .title-40 span  {
+    color: #85c8ff;
+}
+
+.page-team {
+    text-align: center;
+    background-image: url(../images/bgangels.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0 20px 0;
+}
+
+.box-team {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 51px;
+    
+}
+
+.box-team-item {
+    background-color: #fff;
+    flex-basis: 32%;
+    box-shadow: 0 5px 6px #f4f4f4;
+    padding: 250px 0 0 0;
+}
+
+.box-team-item .position {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #1a88e1;
+}
+
+
+.box-team-item .name {
+    font-size: 26px;
+    font-weight: 600;
+    color: #192b59;
+}
+
+/* .box-team-item .avatar {
+    transform: ;
+    /* is used for moving pictures on x axis or y-axis, but the picture wont leave its previous place without traces, 
+    so better use position:absolute in such case no need to use negative margins later
+    . Threfore box-team-item gets position relative and  .box-team-item .avatar
+    position absolute*/
+
+    .box-team-item .avatar {
+        top: -47px;
+        left: 0;
+        right: 0;
+        position: absolute;
+        margin: 0 auto;
+    }
+     /* margin: 0 auto; helps picture to be positioned in the very centre */
+    /* top: -56; will get negative to make pictures go beyond borders */
